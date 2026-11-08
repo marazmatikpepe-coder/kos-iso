@@ -6,6 +6,6 @@ jobs:
     container: { image: "debian:bookworm", options: --privileged }
     steps:
       - uses: actions/checkout@v4
-      - run: ./build.sh "${{ secrets.KOS_SERVER }}" "${{ secrets.KOS_PUBKEY }}"
+      - run: bash ./build.sh "${{ secrets.KOS_SERVER }}" "${{ secrets.KOS_PUBKEY }}"
       - uses: actions/upload-artifact@v4
         with: { name: k-os-iso, path: "*.iso" }
