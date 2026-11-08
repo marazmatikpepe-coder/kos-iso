@@ -1,11 +1,1 @@
-name: build-k-os-iso
-on: workflow_dispatch
-jobs:
-  build:
-    runs-on: ubuntu-22.04
-    container: { image: "debian:bookworm", options: --privileged }
-    steps:
-      - uses: actions/checkout@v4
-      - run: bash ./build.sh "${{ secrets.KOS_SERVER }}" "${{ secrets.KOS_PUBKEY }}"
-      - uses: actions/upload-artifact@v4
-        with: { name: k-os-iso, path: "*.iso" }
+{}
