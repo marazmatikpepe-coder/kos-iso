@@ -1,4 +1,4 @@
 #!/bin/sh
 printf 'ALGO=zstd\nPERCENT=50\n' > /etc/default/zramswap
-systemctl enable zramswap tlp lightdm 2>/dev/null || true
+systemctl enable zramswap tlp lightdm kos-update.timer 2>/dev/null || true
 gtk-update-icon-cache -f /usr/share/icons/K-OS 2>/dev/null || true
