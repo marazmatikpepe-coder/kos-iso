@@ -1,0 +1,7 @@
+[Unit]
+Description=K-OS update check
+After=network-online.target
+[Service]
+Type=oneshot
+Environment=DISPLAY=:0
+ExecStart=/usr/local/bin/kos-updater
