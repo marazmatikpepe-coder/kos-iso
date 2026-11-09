@@ -3,4 +3,3 @@ lightdm lightdm-gtk-greeter picom plank zenity python3-cryptography python3-pil
 iio-sensor-proxy onboard zram-tools tlp network-manager network-manager-gnome pipewire-audio
 fonts-inter firefox-esr xinput calamares calamares-settings-debian
 drawing mousepad ristretto mpv evince file-roller gnome-calculator
-grub-efi-ia32-bin grub-efi-amd64-bin
